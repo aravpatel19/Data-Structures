@@ -26,6 +26,7 @@ public class HashSetTreeSetAssignment {
 
         HashSet<Integer> set = new HashSet<>();
         int j = 3;
+        j = 4;
 
 
         return new HashSet<>();
