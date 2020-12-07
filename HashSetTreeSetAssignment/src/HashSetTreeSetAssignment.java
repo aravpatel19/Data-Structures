@@ -24,6 +24,8 @@ public class HashSetTreeSetAssignment {
 
     public HashSet<Integer> intersection(HashSet<Integer> set1, HashSet<Integer> set2){
 
+        HashSet<Integer> set = new HashSet<>();
+
 
         return new HashSet<>();
     }
