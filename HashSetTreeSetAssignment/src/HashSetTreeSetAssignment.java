@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class HashSetTreeSetAssignment {
 
@@ -64,6 +62,52 @@ public class HashSetTreeSetAssignment {
         HashSet<Integer> evenUnion = evenUnion(list.get(0), list.get(1));
         System.out.println("Even Union: "+evenUnion);
 
+        /*list.get(0).removeAll(list.get(1));
+        System.out.println(list.get(0));*/
+
+        System.out.println();
+
+        HashSet<Integer> setNew = new HashSet<>(list.get(0));
+        Iterator<Integer> it = setNew.iterator();
+        while(it.hasNext()){
+            System.out.print(it.next()+ " ");
+        }
+
+        HashSet<Integer> a = new HashSet<>();
+        a.add(1);
+        a.add(2);
+        a.add(4);
+        a.add(5);
+
+        TreeSet<Integer> b = new TreeSet<>();
+        b.add(1);
+        b.add(2);
+
+        System.out.println("\n\n");
+
+       for(int i=0; i<4; i++){
+           System.out.println(i+": ");
+           for(int j=0; j<4; j++){
+               if(i == 2){
+                   break;
+               }
+               System.out.print(j+" ");
+           }
+           System.out.println();
+           System.out.println("Hello");
+           System.out.println();
+
+           List<List<Integer>> lists = new ArrayList<>();
+           ArrayList<Integer> h = new ArrayList<>();
+           h.add(3);
+           h.add(5);
+           lists.add((List<Integer>) h.clone());
+
+           List<Integer> u = h;
+           System.out.println(lists);
+
+
+       }
     }
 
     public HashSet<Integer> intersection(HashSet<Integer> set1, HashSet<Integer> set2){     //intersection method
