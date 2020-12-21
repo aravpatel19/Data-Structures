@@ -1,3 +1,4 @@
+import java.net.Proxy;
 import java.util.*;
 
 public class HashSetTreeSetAssignment {
@@ -104,9 +105,16 @@ public class HashSetTreeSetAssignment {
            lists.add((List<Integer>) h.clone());
 
            List<Integer> u = h;
-           System.out.println(lists);
+           //System.out.println(lists);
 
-
+            String k = "aw2";
+            int t = 400;
+            for(int o=0; o<k.length(); o++) {
+                try {
+                    t = Integer.parseInt(String.valueOf(k.charAt(o)));
+                } catch (Exception e) {}
+            }
+            System.out.println(t);
        }
     }
 
