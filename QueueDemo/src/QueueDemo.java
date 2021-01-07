@@ -27,7 +27,6 @@ public class QueueDemo {
             for(int i=0; i<p.length; i++){
                 Word word = new Word(p[i]);
                 queue.add(word);
-                pq.add(word);
                 //System.out.println(pq);
             }
             /*System.out.println();
