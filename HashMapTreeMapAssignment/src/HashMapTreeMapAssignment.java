@@ -62,6 +62,33 @@ public class HashMapTreeMapAssignment {
             System.out.println(values.next());
         }
         System.out.println();
+
+        String line = "It is all in a count and counts are so fun! The lett'rs are right there to grab one by one";
+        TreeMap<Character, Integer> treeMap = new TreeMap<>();
+        char[] list = line.toLowerCase().toCharArray();
+        for(char x : list){
+            if(!treeMap.containsKey(x)){
+                treeMap.put(x, 0);
+            }
+            treeMap.put(x, treeMap.get(x)+1);
+        }
+        System.out.println(treeMap);
+
+        String text = "21en ilni tidn ifuo yneh wree hcll idna retn eceh tmor fgno lsre ttel xisl";
+        for(int i=text.length()-1; i>=0; i--){
+            System.out.print(text.charAt(i));
+        }
+        System.out.println();
+
+        text = "Here's secret 2 - it's a challenging task. Use naught what you see, but what you can't see!";
+        System.out.println(text.length());
+        System.out.println(text.charAt(text.length()/2));
+
+        int p = 1;
+        while( p > 0){
+            System.out.println(p);
+            p++;
+        }
     }
 
     public static void main(String[]args){
